@@ -3,17 +3,17 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Service;
 
-import com.tienda.api.dao.ProveedoresDAO;
-import com.tienda.api.entity.Proveedores;
+import com.tienda.api.dao.ClienteDAO;
+import com.tienda.api.entity.Cliente;
 @Service
-public class ProveedoresService extends CRUDImpl<Proveedores,Integer>{
+public class ClienteService extends CRUDImpl<Cliente,Integer>{
 
 	
 	@Autowired
-	private ProveedoresDAO repo;
+	private ClienteDAO repo;
 	
 	@Override
-	public JpaRepository<Proveedores, Integer> getRepository() {
+	public JpaRepository<Cliente, Integer> getRepository() {
 		return repo;
 	}
 
