@@ -3,53 +3,57 @@ package com.tienda.api.entity;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "")
+@Table(name = "PROVEEDORES")
 public class Proveedores {
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	private Integer idproveedores;
+	private Integer PROV_ID;
 	
-	@Column(name="")
-	private String nombre;
+	@Column(name="PROV_NOM")
+	private String PROV_NOM;
 	
-	@Column(name="")
-	private String apellido;
+	@Column(name="PROV_APE")
+	private String PROV_APE;
 	
-	@Column(name="")
-	private String empresa;
+	@Column(name="PROV_EMPRE")
+	private String PROV_EMPRE;
 
-	public Integer getIdproveedores() {
-		return idproveedores;
+	
+
+	public Integer getPROV_ID() {
+		return PROV_ID;
 	}
 
-	public void setIdproveedores(Integer idproveedores) {
-		this.idproveedores = idproveedores;
+	public void setPROV_ID(Integer pROV_ID) {
+		PROV_ID = pROV_ID;
 	}
 
-	public String getNombre() {
-		return nombre;
+	public String getPROV_NOM() {
+		return PROV_NOM;
 	}
 
-	public void setNombre(String nombre) {
-		this.nombre = nombre;
+	public void setPROV_NOM(String pROV_NOM) {
+		PROV_NOM = pROV_NOM;
 	}
 
-	public String getApellido() {
-		return apellido;
+	public String getPROV_APE() {
+		return PROV_APE;
 	}
 
-	public void setApellido(String apellido) {
-		this.apellido = apellido;
+	public void setPROV_APE(String pROV_APE) {
+		PROV_APE = pROV_APE;
 	}
 
-	public String getEmpresa() {
-		return empresa;
+	public String getPROV_EMPRE() {
+		return PROV_EMPRE;
 	}
 
-	public void setEmpresa(String empresa) {
-		this.empresa = empresa;
+	public void setPROV_EMPRE(String pROV_EMPRE) {
+		PROV_EMPRE = pROV_EMPRE;
 	}
+
+	
 	
 	
 	

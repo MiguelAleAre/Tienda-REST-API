@@ -52,7 +52,7 @@ public class ProveedoresController {
 	
 	@PutMapping("/actualizarProvee")
 	public ResponseEntity<Proveedores> actualizarProvee(@RequestBody Proveedores prov) throws Exception{
-		Proveedores bean=serProve.buscar(prov.getIdproveedores());
+		Proveedores bean=serProve.buscar(prov.getPROV_ID());
 		if(bean==null)
 			throw new NotFoundException();
 		else
