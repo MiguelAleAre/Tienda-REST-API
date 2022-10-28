@@ -20,6 +20,16 @@ public class Proveedores {
 	private String PROV_EMPRE;
 
 	
+	
+	
+
+	public String getPROV_EMPRE() {
+		return PROV_EMPRE;
+	}
+
+	public void setPROV_EMPRE(String pROV_EMPRE) {
+		PROV_EMPRE = pROV_EMPRE;
+	}
 
 	public Integer getPROV_ID() {
 		return PROV_ID;
@@ -45,13 +55,7 @@ public class Proveedores {
 		PROV_APE = pROV_APE;
 	}
 
-	public String getPROV_EMPRE() {
-		return PROV_EMPRE;
-	}
 
-	public void setPROV_EMPRE(String pROV_EMPRE) {
-		PROV_EMPRE = pROV_EMPRE;
-	}
 
 	
 	
