@@ -13,11 +13,13 @@ public class Proveedores {
 	@Column(name="PROV_NOM")
 	private String PROV_NOM;
 	
+	@Column(name="PROV_EMPRE")
+	private String PROV_EMPRE;
+	
 	@Column(name="PROV_APE")
 	private String PROV_APE;
 	
-	@Column(name="PROV_EMPRE")
-	private String PROV_EMPRE;
+	
 
 	
 	
